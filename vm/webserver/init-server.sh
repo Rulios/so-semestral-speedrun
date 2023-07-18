@@ -5,6 +5,8 @@
 
 #cd so-semestral-speedrun/vm/webserver/
 
+#chmod +x init-server.sh
+
 #./init-server.sh
 
 # Update package list and install Python 3 and Pip
