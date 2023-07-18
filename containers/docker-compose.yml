@@ -1,0 +1,39 @@
+version: "3.9"
+services:
+  webnode1:
+    image: webnode:1.0.0
+    container_name: webnode1
+    build:
+      context: ./web-app
+      dockerfile: Dockerfile
+    networks:
+      - semestral
+
+  webnode2:
+    image: webnode:1.0.0
+    container_name: webnode2
+    build:
+      context: ./web-app
+      dockerfile: Dockerfile
+    networks:
+      - semestral
+
+  nginx-load-balancer:
+    image: nginx-load-balancer:1.0.0
+    container_name: "nginx-load-balancer"
+    build:
+      context: ./load-balancer
+      dockerfile: Dockerfile
+    stdin_open: true
+    tty: true
+    ports:
+      - "80:80"
+    depends_on:
+      - webnode1
+      - webnode2
+    networks:
+      - semestral
+
+networks:
+  semestral:
+    driver: bridge
