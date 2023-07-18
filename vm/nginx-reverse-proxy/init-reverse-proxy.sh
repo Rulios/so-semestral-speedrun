@@ -15,7 +15,7 @@ sudo apt install nginx
 
 sudo ufw allow 'Nginx HTTP'
 
-cp ./nginx.conf /etc/nginx/nginx.conf
+sudo cp ./nginx.conf /etc/nginx/nginx.conf
 
 sudo systemctl restart nginx
 
