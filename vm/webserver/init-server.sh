@@ -1,9 +1,9 @@
 #clone repo
 #git clone https://github.com/Rulios/so-semestral-speedrun.git
 
-#cd so-semestral-speedrun/webserver/
+#cd so-semestral-speedrun/vm/webserver/
 
-./init-server.sh
+#./init-server.sh
 
 # Update package list and install Python 3 and Pip
 sudo apt update
