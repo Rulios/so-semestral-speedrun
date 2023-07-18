@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #clone repo
 #git clone https://github.com/Rulios/so-semestral-speedrun.git
 
