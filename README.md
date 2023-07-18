@@ -1,4 +1,4 @@
-# so-semestral-speedrun
+# So-Semestral-Speedrun
 
 ## Description
 
@@ -7,6 +7,8 @@ This repository contains the source code and configurations for the semester pro
 ## Getting Started
 
 ### Prerequisites
+
+Before running the project, ensure that you have the following prerequisites:
 
 - Linux Ubuntu Distro
 - Docker and Docker Compose installed
@@ -17,8 +19,8 @@ Follow these steps to run the containers:
 
 1. Navigate to the `/containers` folder.
 2. Run `docker-compose up` (or `docker compose up` for some Compose versions).
-3. Observe the logs of the following containers:
-   - Webnode1
+3. Observe the logs of the following containers by using the command: `docker logs -f <container-name>`:
+   - Webnode1 
    - Webnode2
    - Nginx-reverse-proxy
 
